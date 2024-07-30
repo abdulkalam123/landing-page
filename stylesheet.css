@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(images/banner.jpg);
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid grey;
+    transition: 0.6s linear;
+}
+.menu a:hover:before{
+    width: 100%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(to bottom right, red,yellow);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.register a:hover{
+    background: transparent;
+    border:1px solid white
+}
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.h-txt span{
+    letter-spacing: 5px;
+}
+.h-txt h1{
+    font-size: 3.5em;
+    transition: color 0.5s ease;
+}
+.h-txt h1:hover {
+    color: rgb(120, 179, 235);
+}
+.h-txt a{
+    text-decoration: none;
+    background: linear-gradient(to bottom right, red,yellow);
+    color: white;
+    transition: 0.4s;
+}
+.h-txt a:hover{
+    background: black;
+    border:1px solid white
+
+}
+/* about section */
+.row{
+    display: flex;
+}
+.about{
+    width: 100%;
+    height: 400PX;
+    background: rgb(34, 34, 34);
+    color: white;
+}
+.about h1{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+}
+.about p{
+    padding: 70px;
+    padding-right: 200px;
+}
+.about button{
+    transition: 0.5s ease-in;
+}
+.about button:hover{
+    background-color: rgb(235, 126, 25);
+    color: white;
+}
+img{
+    padding-right: 100px;
+    max-width: 400px;
+    max-height: 400px;
+}
+/* journey section */
+.journey{
+    background:linear-gradient( rgb(0,0,0),rgba(0,0,0,0.2));
+    padding-bottom: 100px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.coutries{
+    background: #000;
+}
+.country_name{
+    gap: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.country_name i{
+    padding-left: 50px;
+    font-size: 1.2rem;
+}
+.country_name span{
+    font-style: italic;
+    color: blue;
+}
+.country_name:hover i,
+.country_name:hover span{
+    color: black;
+}
+.countries img{
+    display: block;
+    transition: transfrom 0.8s;
+    position: relative;
+    padding-left: 50px;
+    filter: gray;
+    -webkit-filter: grayscale(0);
+
+}
+.countries:hover img{
+    filter: none;
+    -webkit-filter: grayscale(1);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.journey h1{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+    color: skyblue;
+}
+.journey p{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 60px;
+    color: gray;
+}
+/* banner section */
+.banner{
+    background-image: linear-gradient(rgba(35,71,103,.5),
+    rgba(35,71,103,.5)),
+    url(images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+.banner2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    padding-left: 400px;
+}
+.banner2 h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.banner2 button{
+    padding: .5rem 2rem;
+    outline: none;
+    border: 2px solid rgb(51, 183, 216);
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+.banner2:hover button{
+    color: #000;
+    background: white;
+    transition: 0.8s;
+}
+/* display section */
+.display{
+    background-color: #e1eff3;
+}
+.display h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.display p{
+    padding-top: 15px;
+    text-align: center;
+}
+.display {
+    padding-top: 30px;
+}
+
+.grid2 {
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.display2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.display3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    background: whitesmoke;
+    width: 300px;
+}
+
+.display3 i {
+    font-size: 30px;
+    color: rgb(49, 88, 196);
+}
+
+.display2 h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.display2 p {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+
+.grid2 .grid1 {
+    grid-area: 1/1/3/3;
+}
+/* footer section */
+.footer{
+    padding-top: 30px;
+    background: rgb(53, 51, 51);
+    color: white;
+    text-align: center;
+}
+.icons{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 1rem;
+}
+.footer p{
+    padding-bottom: 60px;
+}
